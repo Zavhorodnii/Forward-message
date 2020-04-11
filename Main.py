@@ -7,7 +7,7 @@ from telegram.ext import *
 # logger = logging.getLogger(__name__)
 # logger.setLevel(logging.INFO)
 
-TELEGRAM_HTTP_API_TOKEN = '1144634373:AAF7iX0Lyt1k5Mb3Oa-puPAe-N89ZBM7vvY'
+TELEGRAM_HTTP_API_TOKEN = '1157877700:AAHvI_cxSaiuuuYGERrYqwTUiJIqjkTWZYA'
 
 CHECK_MES = 0
 
