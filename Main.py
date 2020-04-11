@@ -20,23 +20,25 @@ class Forward_message:
     def return_message(self, update, context):
         self.__chat = update.message.chat.id
         self.__index = update.message.message_id
-        # self.forward(update, context)
-        myfile = open("Users.txt", "a")
-        myfile.write(
-            "{} {} {} {}\n".format(
-                update.message.from_user.id,
-                update.message.from_user.first_name,
-                update.message.from_user.last_name,
-                update.message.from_user.username)
-        )
-        myfile.close()
+        # myfile = open("Users.txt", "a")
+        # myfile.write(
+        #     "{} {} {} {}\n".format(
+        #         update.message.from_user.id,
+        #         update.message.from_user.first_name,
+        #         update.message.from_user.last_name,
+        #         update.message.from_user.username)
+        # )
+        # myfile.close()
+
+        if update.message.from_user.id == 1044050168:
+            self.forward(update, context)
 
 
     def forward(self, update, context, **kwargs):
         context.bot.forward_message(
             chat_id=self.__chat,
             from_chat_id=self.__chat,
-            message_id=int(self.__index)-1,
+            message_id=int(self.__index),
             disable_notification=False, timeout=None, **kwargs
         )
 
