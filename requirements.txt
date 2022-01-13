@@ -14,7 +14,7 @@ filelock==3.0.12
 future==0.18.2
 idna==2.9
 mysqlclient==1.4.6
-Pillow==7.0.0
+Pillow==9.0.0
 pipreqs==0.4.10
 psycopg2==2.8.4
 pycparser==2.20
